@@ -1,0 +1,100 @@
+[H] Starting zsim, built Tue Sep 30 16:51:24 CDT 2025 (rev no git repo)
+[H] Creating global segment, 1024 MBs
+[H] Global segment shmid = 163892
+[H] Deadlock detection ON
+[S 0] Started instance
+[S 0] Started RR scheduler, quantum=10000 phases
+[S 0] mem-0: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-0: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-1: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-1: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-2: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-2: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] mem-3: domain 0, 4 ranks/ch 8 banks/rank, tech DDR3-1333-CL10, boundLat 90 rd / 40 wr
+[S 0] mem-3: Address mapping rank:col:bank row 63:15 col 12:3 rank 14:13 bank 2:0
+[S 0] Hierarchy: [ l1i-0 l1d-0 ] -> l2-0
+[S 0] Hierarchy: [ l1i-1 l1d-1 ] -> l2-1
+[S 0] Hierarchy: [ l1i-2 l1d-2 ] -> l2-2
+[S 0] Hierarchy: [ l1i-3 l1d-3 ] -> l2-3
+[S 0] Hierarchy: [ l1i-4 l1d-4 ] -> l2-4
+[S 0] Hierarchy: [ l1i-5 l1d-5 ] -> l2-5
+[S 0] Hierarchy: [ l1i-6 l1d-6 ] -> l2-6
+[S 0] Hierarchy: [ l1i-7 l1d-7 ] -> l2-7
+[S 0] Hierarchy: [ l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 ] -> l3-0b0..l3-0b7
+[S 0] Initialized system
+[S 0] HDF5 backend: Opening ./outputs/hw2/A3/freqmine_8c_simsmall/zsim.h5
+[S 0] HDF5 backend: Created table, 9096 bytes/record, 116 records/write
+[S 0] HDF5 backend: Opening ./outputs/hw2/A3/freqmine_8c_simsmall/zsim-ev.h5
+[S 0] HDF5 backend: Created table, 9096 bytes/record, 15 records/write
+[S 0] HDF5 backend: Opening ./outputs/hw2/A3/freqmine_8c_simsmall/zsim-cmp.h5
+[S 0] HDF5 backend: Created table, 3192 bytes/record, 1 records/write
+[S 0] Initialization complete
+[H] Attached to global heap
+[S 0] Started process, PID 3157746
+[S 0] procMask: 0x0
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 0
+[S 0] vDSO info initialized
+[S 0] FF thread 0 starting
+[S 0] FF control Thread TID 3157792
+[S 0] Started contention simulation thread 0
+[S 0] Started scheduler watchdog thread
+[S 0] [0] Post-patching SYS_sched_getaffinity size 128 cpuset 0x7fffffffcb00
+PARSEC Benchmark Suite Version 2.1
+[HOOKS] PARSEC Hooks Version 1.2
+number of threads: 8
+[HOOKS] Entering ROI
+[S 0] ROI_BEGIN, exiting fast-forward
+[S 0] [0] Adjusting clocks, domain 0, de-ffwd 1
+[S 0] Thread 0 starting
+[S 0] Thread 4 starting
+[S 0] Thread 5 starting
+[S 0] Thread 6 starting
+[S 0] Thread 7 starting
+[S 0] Thread 8 starting
+[S 0] Thread 9 starting
+[S 0] Thread 10 starting
+[S 0] [0] Post-patching SYS_sched_getaffinity size 128 cpuset 0x7fffffffc9d0
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [0/6] futex (202) @ 0x46bfba
+[S 0] Blacklisting from future fake leaves: [0] futex @ 0x46bfba | arg0 0x900fd4 arg1 0x80
+[S 0] Detected possible stall due to fake leaves (6 current)
+[S 0]  [0/6] futex (202) @ 0x46be40
+[S 0]  [0/9] futex (202) @ 0x46be40
+[S 0]  [0/10] futex (202) @ 0x46be40
+[S 0]  [0/5] futex (202) @ 0x46be40
+[S 0]  [0/8] futex (202) @ 0x46be40
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Detected possible stall due to fake leaves (5 current)
+[S 0]  [0/9] futex (202) @ 0x46be40
+[S 0]  [0/10] futex (202) @ 0x46be40
+[S 0]  [0/5] futex (202) @ 0x46be40
+[S 0]  [0/8] futex (202) @ 0x46be40
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Detected possible stall due to fake leaves (4 current)
+[S 0]  [0/10] futex (202) @ 0x46be40
+[S 0]  [0/5] futex (202) @ 0x46be40
+[S 0]  [0/8] futex (202) @ 0x46be40
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Detected possible stall due to fake leaves (3 current)
+[S 0]  [0/5] futex (202) @ 0x46be40
+[S 0]  [0/8] futex (202) @ 0x46be40
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Detected possible stall due to fake leaves (2 current)
+[S 0]  [0/8] futex (202) @ 0x46be40
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Detected possible stall due to fake leaves (1 current)
+[S 0]  [0/4] futex (202) @ 0x46be40
+[S 0] Blacklisting from future fake leaves: [0] futex @ 0x46be40 | arg0 0x900664 arg1 0x80
+[S 0] Max total (aggregate) instructions reached (5000002254)
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Termination condition met, exiting
+[S 0] Terminating scheduler watchdog thread
+[S 0] Dumping termination stats
+[H] Child 3157746 done
+[H] All children done, exiting

@@ -97,7 +97,29 @@ class BranchPredictorPAg {
                 pht[phtIdx] = taken? (pred? 3 : (pht[phtIdx]+1)) : (pred? (pht[phtIdx]-1) : 0); //2-bit saturating counter
             } else {
                 // Please implement Automaton 3 for update
-
+                // Please implement Automaton 3 for update
+                pht[phtIdx] = taken? (pht[phtIdx]>=1? 3:1) : (pht[phtIdx]<=2? 0:2);
+                // if(taken) {
+                //     if(pht[phtIdx]==3) {
+                //         pht[phtIdx] = 3;
+                //     } else if (pht[phtIdx]==2){
+                //         pht[phtIdx] = 3;
+                //     } else if (pht[phtIdx]==1){
+                //         pht[phtIdx] = 3;
+                //     }  else if (pht[phtIdx]==0){
+                //         pht[phtIdx] = 1;
+                //     }
+                // } else {
+                //     if(pht[phtIdx]==3) {
+                //         pht[phtIdx] = 2;
+                //     } else if (pht[phtIdx]==2){
+                //         pht[phtIdx] = 0;
+                //     } else if (pht[phtIdx]==1){
+                //         pht[phtIdx] = 0;
+                //     }  else if (pht[phtIdx]==0){
+                //         pht[phtIdx] = 0;
+                //     }
+                // }
             }
             bhsr[bhsrIdx] = ((bhsr[bhsrIdx] << 1) & histMask ) | (taken? 1: 0); //we apply phtMask here, dependence is further away
 

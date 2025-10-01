@@ -1,3 +1,5 @@
 benchmarks/
 single-benchmark.zip
 *.pyc
+venv
+hw2_*
