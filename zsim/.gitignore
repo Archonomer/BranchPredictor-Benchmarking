@@ -1,3 +1,4 @@
 build
-# outputs
+outputs
 .sconsign.dblite
+hw2*
